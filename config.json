@@ -1,0 +1,8 @@
+{
+  "GCLOUD_PROJECT": "bookshelf-194003",
+  "DATA_BACKEND": "mongodb",
+  "MONGO_URL": "mongodb://bien:keymaster@ds117758.mlab.com:17758/bookshelf",
+  "MONGO_COLLECTION": "books",
+  "MONGO_DB_NAME": "bookshelf",
+  "CLOUD_BUCKET": "bookshelf-989-bucket"
+}

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$ionicons-font-path: "/fonts/ionicons" !default;
+$ionicons-font-family: "Ionicons" !default;
+$ionicons-version: "3.0.0-alpha.3" !default;
+@import "../node_modules/ionicons/dist/scss/ionicons";
+
+body {
+  font-size: 1.2em;
+}
+
+.lead {
+  font-size: 1.4em;
+}
+
+pre {
+  background-color: #333;
+  border-color: #333;
+  color: #eee;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.navbar,
+.navbar .btn,
+.navbar .dropdown-item,
+.navbar button {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .display-2 {
+    font-size: 3em;
+  }
+  .display-3 {
+    font-size: 2.5em;
+  }
+  .display-4 {
+    font-size: 2em;
+  }
+}
+
+/**
+ * This is a fix for Reactstrap 5.0.0-alpha.4 not displaying menus correctly.
+ **/
+.navbar .dropdown {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar .dropdown-menu {
+    position: relative !important;
+    display: block !important;
+    transform: none !important;
+    padding: 0 0 10px 0;
+    border: none;
+  }
+}
+
+/**
+ * CSS for dropdown menus that don't require JavaScript
+ **/
+.nojs-dropdown-content {
+  width: 100%;
+}
+.nojs-dropdown-toggle {
+  display: none;
+}
+@media (max-width: 767px) {
+  .nojs-dropdown-content {
+     display: none;
+  }
+  .nojs-dropdown-toggle:checked + .nojs-dropdown-content {
+    display: block;
+  }
+}
